@@ -58,7 +58,7 @@ const books = [
     document.body.appendChild(newMain)
     newMain.appendChild(newSection)
 
-    function tarjetas(book, i) {
+    function crearTarjeta(book, i) {
 
       let newArticle = document.createElement('article')
       newArticle.setAttribute('class','art')
@@ -103,9 +103,9 @@ const books = [
 
     }
 
-    let tarjeta
+   
     for (let i = 0; i < books.length; i++) {
-      tarjeta += tarjetas(books[i],i)
+      crearTarjeta(books[i],i)
     }
 
   /*-------------------------
