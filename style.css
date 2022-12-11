@@ -5,7 +5,6 @@ body{
 }
 
 
-
 header{
   display: flex;
   justify-content: center;
@@ -16,7 +15,7 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   
 }
 
@@ -31,21 +30,21 @@ section{
    
   }
 
-  .art h3{
+.art h3{
     color: #501537;
   }
 
-  .art .cover{
+.art .cover{
     border-radius: 10%;
   }
   
  
-  .art:hover {
+.art:hover {
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
   }
   
 
-  .container {
+.container {
     padding: 2px 16px;
     background-color: #D4E79E;
     
