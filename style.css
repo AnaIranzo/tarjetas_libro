@@ -1,21 +1,59 @@
+
+body{
+  font-family: 'Gentium Book Basic', serif;
+  background-color: #B8C480;
+}
+
+
+
+header{
+  display: flex;
+  justify-content: center;
+  color: #3C1B43
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+
+
+
 .art {
-   
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width:30%;
+    color: #922D50;
    
+  }
+
+  .art h3{
+    color: #501537;
+  }
+
+  .art .cover{
+    border-radius: 10%;
   }
   
  
   .art:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
   }
   
 
   .container {
     padding: 2px 16px;
-   
+    background-color: #D4E79E;
+    
   }
+
+.cover{
+  height: 40vh;
+}

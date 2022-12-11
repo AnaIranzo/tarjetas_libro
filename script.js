@@ -6,7 +6,7 @@ const books = [
       "country": "Nigeria",
       "imageLink": "images/things-fall-apart.jpg",
       "language": "English",
-      "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
+      "link": "./assets/ThingsFallApart.jpeg",
       "pages": 209,
       "title": "Things Fall Apart",
       "year": 1958
@@ -16,7 +16,7 @@ const books = [
       "country": "Denmark",
       "imageLink": "images/fairy-tales.jpg",
       "language": "Danish",
-      "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
+      "link": "./assets/fairytales.jpeg",
       "pages": 784,
       "title": "Fairy tales",
       "year": 1836
@@ -26,7 +26,7 @@ const books = [
       "country": "Italy",
       "imageLink": "images/the-divine-comedy.jpg",
       "language": "Italian",
-      "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
+      "link": "./assets/divinacomedia2.jpeg",
       "pages": 928,
       "title": "The Divine Comedy",
       "year": 1315
@@ -36,7 +36,7 @@ const books = [
       "country": "Sumer and Akkadian Empire",
       "imageLink": "images/the-epic-of-gilgamesh.jpg",
       "language": "Akkadian",
-      "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
+      "link": "./assets/British_Museum_Flood_Tablet.jpeg",
       "pages": 160,
       "title": "The Epic Of Gilgamesh",
       "year": -1700
@@ -46,12 +46,18 @@ const books = [
       "country": "Achaemenid Empire",
       "imageLink": "images/the-book-of-job.jpg",
       "language": "Hebrew",
-      "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
+      "link": "./assets/bookofjob.jpeg",
       "pages": 176,
       "title": "The Book Of Job",
       "year": -600
     }]
-    
+    let newHeader = document.createElement('header')
+    let newH1 = document.createElement('h1')
+    document.body.appendChild(newHeader)
+    newHeader.appendChild(newH1)
+    document.querySelector('h1').innerHTML = 'Biblioteca'
+
+
     let newMain = document.createElement('main')
     let newSection = document.createElement('section')
 
@@ -97,7 +103,7 @@ const books = [
       document.getElementsByClassName('title')[i].innerHTML = book.title
       document.getElementsByClassName('author')[i].innerHTML = book.author
       document.getElementsByClassName('country')[i].innerHTML = book.country
-      document.getElementsByClassName('cover')[i].src = book.imageLink
+      document.getElementsByClassName('cover')[i].src = book.link
       document.getElementsByClassName('lan')[i].innerHTML = book.language
       document.getElementsByClassName('year')[i].innerHTML = book.year
 
